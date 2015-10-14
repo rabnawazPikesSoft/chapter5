@@ -1,0 +1,14 @@
+<header class="nav navbar-nav">
+      <div class="container">
+       <%= link_to image_tag("side.png", alt: "Rails logo",class:'myclass'),
+            static_pages_home_path %>
+        <nav>
+          <ul class="nav navbar-nav navbar-right" id="list">
+            <li class="home"><%= link_to "Home",   root_path %></li>
+            <li><%= link_to "Help",   static_pages_help_path %></li>
+            
+            <li><%= link_to "Log in", '#' %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
