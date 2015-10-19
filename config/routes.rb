@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'sessions/new'
 
   get 'users/new'
+   get 'users/index'
   resources :users
 
   get 'static_pages/home'
@@ -13,6 +14,7 @@ Rails.application.routes.draw do
   get 'static_pages/about'
   root 'static_pages#home'
   get  'static_pages/contact'
+  get 'users/sign_in'
   resources :sessions
 
   # The priority is based upon order of creation: first created -> highest priority.

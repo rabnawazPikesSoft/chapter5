@@ -458,3 +458,15 @@ Processing by StaticPagesController#help as HTML
   Rendered static_pages/help.html.erb (0.6ms)
 Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
   [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (457.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar, "age" varchar, "remember_digest" varchar, "admin" boolean) [0m
+  [1m[35m (95.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (107.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (107.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151019101553')
+  [1m[36m (108.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151014110353')[0m
+  [1m[35m (108.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151014093334')
+  [1m[36m (108.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151014105638')[0m
+  [1m[35m (110.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151015121240')
+  [1m[36m (108.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151014104834')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
